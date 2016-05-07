@@ -12,7 +12,7 @@ npm i --save react-dogear
 
 ## Usage
 
-### <DogEar>
+### `<DogEar>`
 - **current**: The current page number (required)
 - **total**: The total number of possible pages (required)
 - **maxItems**: The total number of navigation items to show, 25 by default
