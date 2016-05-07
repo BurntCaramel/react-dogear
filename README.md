@@ -12,6 +12,10 @@ npm i --save react-dogear
 
 ## Usage
 
+```javascript
+import DogEar from 'react-dogear' 
+```
+
 ### `<DogEar>`
 - **current**: The current page number (required)
 - **total**: The total number of possible pages (required)
