@@ -1,4 +1,4 @@
-# react-dogear
+# react-dogear · <DogEar>
 
 [![Travis][build-badge]][build]
 [![npm package][npm-badge]][npm]
