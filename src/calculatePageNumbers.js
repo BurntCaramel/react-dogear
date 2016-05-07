@@ -32,25 +32,25 @@ export default function calculatePageNumbers({ total, current, maxItems, leading
 		const leadingPagesStride = max(1, firstUninterruptedPage / leadingItemsCount);
 		for (var pageNumber = 1.0; pageNumber < firstUninterruptedPage; pageNumber += leadingPagesStride) {
 			pageNumbers.push(
-		floor(pageNumber)
-		);
+				floor(pageNumber)
+			);
 		}
 	}
 
-	for (pageNumber = firstUninterruptedPage; pageNumber <= lastUninterruptedPage; pageNumber++) {
+	for (var pageNumber = firstUninterruptedPage; pageNumber <= lastUninterruptedPage; pageNumber++) {
 		pageNumbers.push(
-		pageNumber
-	);
+			pageNumber
+		);
 	}
 
 	if (trailingItemsCount > 0) {
 		let trailingItems = [];
 		const trailingPagesStride = max(1, (total - lastUninterruptedPage + 1) / trailingItemsCount);
 
-		for (pageNumber = total; pageNumber > lastUninterruptedPage; pageNumber -= trailingPagesStride) {
+		for (var pageNumber = total; pageNumber > lastUninterruptedPage; pageNumber -= trailingPagesStride) {
 			trailingItems.unshift(
-		ceil(pageNumber)
-		);
+				ceil(pageNumber)
+			);
 		}
 
 		pageNumbers = pageNumbers.concat(trailingItems);
