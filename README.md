@@ -1,4 +1,4 @@
-# react-dogear · <DogEar>
+# React Dog Ear · pagination component
 
 [![Travis][build-badge]][build]
 [![npm package][npm-badge]][npm]
