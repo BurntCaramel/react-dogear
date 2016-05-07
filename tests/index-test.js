@@ -21,7 +21,7 @@ describe('DogEar', () => {
 			hrefForPage={(page) => `#${page}`}
 			itemPropsWhenCurrent={{ className: 'current' }}
 			/>, node, () => {
-      expect(node.innerHTML).toContain('<nav data-reactid=".0"><a href="#1" class="current" data-reactid=".0.$1">1</a><a href="#2" data-reactid=".0.$2">2</a><a href="#3" data-reactid=".0.$3">3</a><a href="#4" data-reactid=".0.$4">4</a><a href="#6" data-reactid=".0.$6">6</a><a href="#8" data-reactid=".0.$8">8</a><a href="#10" data-reactid=".0.$10">10</a></nav>')
+      expect(node.innerHTML).toContain('<nav data-reactroot=""><a href="#1" class="current">1</a><a href="#2">2</a><a href="#3">3</a><a href="#4">4</a><a href="#6">6</a><a href="#8">8</a><a href="#10">10</a></nav>')
     })
   })
 	
@@ -31,7 +31,7 @@ describe('DogEar', () => {
 			hrefForPage={(page) => `#${page}`}
 			itemPropsWhenCurrent={{ className: 'current' }}
 			/>, node, () => {
-      expect(node.innerHTML).toContain('<nav data-reactid=".1"><a href="#1" class="current" data-reactid=".1.$1">1</a><a href="#2" data-reactid=".1.$2">2</a><a href="#3" data-reactid=".1.$3">3</a><a href="#145" data-reactid=".1.$145">145</a><a href="#288" data-reactid=".1.$288">288</a><a href="#430" data-reactid=".1.$430">430</a><a href="#573" data-reactid=".1.$573">573</a><a href="#715" data-reactid=".1.$715">715</a><a href="#858" data-reactid=".1.$858">858</a><a href="#1000" data-reactid=".1.$1000">1000</a></nav>')
+      expect(node.innerHTML).toContain('<nav data-reactroot=""><a href="#1" class="current">1</a><a href="#2">2</a><a href="#3">3</a><a href="#145">145</a><a href="#288">288</a><a href="#430">430</a><a href="#573">573</a><a href="#715">715</a><a href="#858">858</a><a href="#1000">1000</a></nav>')
     })
   })
 	
@@ -44,7 +44,7 @@ describe('DogEar', () => {
 			itemPropsWhenCurrent={{ className: 'current' }}
 			Item={ CustomItem }
 			/>, node, () => {
-      expect(node.innerHTML).toContain('<nav data-reactid=".2"><h2 data-reactid=".2.$1"><a href="#1" class="current" data-reactid=".2.$1.0">1</a></h2><h2 data-reactid=".2.$2"><a href="#2" data-reactid=".2.$2.0">2</a></h2><h2 data-reactid=".2.$3"><a href="#3" data-reactid=".2.$3.0">3</a></h2><h2 data-reactid=".2.$4"><a href="#4" data-reactid=".2.$4.0">4</a></h2><h2 data-reactid=".2.$6"><a href="#6" data-reactid=".2.$6.0">6</a></h2><h2 data-reactid=".2.$8"><a href="#8" data-reactid=".2.$8.0">8</a></h2><h2 data-reactid=".2.$10"><a href="#10" data-reactid=".2.$10.0">10</a></h2></nav>')
+      expect(node.innerHTML).toContain('<nav data-reactroot=""><h2><a href="#1" class="current">1</a></h2><h2><a href="#2">2</a></h2><h2><a href="#3">3</a></h2><h2><a href="#4">4</a></h2><h2><a href="#6">6</a></h2><h2><a href="#8">8</a></h2><h2><a href="#10">10</a></h2></nav>')
     })
   })
 })
